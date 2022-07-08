@@ -1,0 +1,23 @@
+.navbarContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: bisque;
+height: 50px;
+}
+
+.navbarContainer li{
+    display: inline;
+    margin: 10px 20px;
+    
+    
+}
+.navbarContainer p{
+    display: inline;
+}
+
+.navbarRightLink, .navbarLeftLink{
+    text-decoration: none;
+    font-size: 20px;
+}
