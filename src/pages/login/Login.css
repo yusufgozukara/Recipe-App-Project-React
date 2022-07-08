@@ -1,0 +1,36 @@
+.loginBigContainer{
+    background-image: url(../../assets/loginBg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* object-fit: contain; */
+}
+
+.loginContainer{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(89, 203, 225, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginContainer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    gap: 20px;
+}
+
+.loginContainer img{
+    width: 100px;
+    margin-bottom: 20px;
+}
