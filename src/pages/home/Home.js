@@ -21,7 +21,7 @@ const Home = () => {
     
     try {
       const {data} = await axios.get(url);
-      setFood(data[0])
+      setFood(data)
     } catch (error) {
       console.log(error);
     } 
