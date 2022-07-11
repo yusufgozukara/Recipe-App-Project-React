@@ -60,7 +60,7 @@ const Home = () => {
       <div className="miniFoodCard">
         <h2>??food name</h2>
         <img src="" alt="??food img" />
-        <button onClick={navigate(`recipecard`)}>View More</button>
+        <button onClick={() => navigate(`recipecard`)}>View More</button>
         </div>
       </div>
     </div>
