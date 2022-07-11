@@ -21,7 +21,8 @@ const Navbar = () => {
       <div className="navbarRight">
         <ul>
           <li><Link to='/about' className='navbarRightLink'>About</Link></li>
-          <li><Link to="/github" target="_blank" className='navbarRightLink'>Github</Link></li>
+          {/* <li><Link to="/github" target="_blank" className='navbarRightLink'>Github</Link></li> */}
+          <li><a href='https://github.com/yusufgozukara' target="_blank" rel="noopener noreferrer" className='navbarRightLink'>Github</a></li>
           <li><Link to='/' className='navbarRightLink'>Logout</Link></li>
         </ul>
         

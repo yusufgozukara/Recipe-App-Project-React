@@ -13,7 +13,13 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  const url = 'https://jsonplaceholder.typicode.com/photos';
+  const APP_KEY = process.env.REACT_APP_KEY;
+  const APP_ID = process.env.REACT_APP_ID;
+
+  // const url = 'https://jsonplaceholder.typicode.com/photos';
+  const url = 'https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}';
+  // const url = 'https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}';
+  console.log(url);
 
   // const {id, title, thumbnailUrl } = data;
   
