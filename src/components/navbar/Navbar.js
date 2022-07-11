@@ -22,7 +22,7 @@ const Navbar = () => {
         <ul>
           <li><Link to='/about' className='navbarRightLink'>About</Link></li>
           <li><Link to="/github" target="_blank" className='navbarRightLink'>Github</Link></li>
-          <li><Link to='/logout' className='navbarRightLink'>Logout</Link></li>
+          <li><Link to='/' className='navbarRightLink'>Logout</Link></li>
         </ul>
         
       </div>
