@@ -14,7 +14,7 @@ const Navbar = () => {
         <p>≺ED8EN/≻</p>
         <ul>
           <li>
-            <Link to='/' className='navbarLeftLink'>RECIPE</Link>
+            <Link to='/home' className='navbarLeftLink'>RECIPE</Link>
           </li>
         </ul>
       </div>
