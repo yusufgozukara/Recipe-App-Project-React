@@ -1,10 +1,12 @@
 import React from 'react'
 import {Link, Navlink} from 'react-router-dom';
 import './Navbar.css';
+import { useEffect } from 'react';
 
 const Navbar = () => {
 
-  const githubUrl = "https://github.com/yusufgozukara";
+
+
 
   return (
     <div className='navbarContainer'>
@@ -19,7 +21,7 @@ const Navbar = () => {
       <div className="navbarRight">
         <ul>
           <li><Link to='/about' className='navbarRightLink'>About</Link></li>
-          <li><Link to={githubUrl} target="_blank" className='navbarRightLink'>Github</Link></li>
+          <li><Link to="/github" target="_blank" className='navbarRightLink'>Github</Link></li>
           <li><Link to='/logout' className='navbarRightLink'>Logout</Link></li>
         </ul>
         
