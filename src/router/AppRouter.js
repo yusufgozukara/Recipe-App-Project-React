@@ -5,6 +5,7 @@ import Login from '../pages/login/Login';
 import About from '../pages/about/About';
 import Home from '../pages/home/Home';
 import NotFound from '../pages/notFound/NotFound';
+import RecipeCard from '../pages/home/RecipeCard';
 
 
 const AppRouter = () => {
@@ -16,8 +17,9 @@ const AppRouter = () => {
         <Route path='/' element={<Login/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='github' />
-        <Route path='home' element={<Home/>}/>
-        <Route path='/' element={<Login/>}/>
+        <Route path='/home' element={<Home/>}>
+        </Route>
+          <Route path='recipecard' element={<RecipeCard/>}/>
         <Route path='*' element={<NotFound/>}/>
         
         
