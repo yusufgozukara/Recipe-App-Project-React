@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate, useLocation } from "react-router-dom";
-import recipeCardFoto from '../../assets/diet.svg'
+import recipeCardFoto from '../../assets/diet.svg';
+import './Details.css';
+
 
 
 const Details = () => {
@@ -12,7 +14,7 @@ const Details = () => {
     totalWeight,
     label: mainlabel,
     totalNutrients: {
-      CA: { label: calabel, quantity: caquantity },
+      CA: { label: calabelinho, quantity: caquantity },
       CHOCDF: { label: cholabel, quantity: choquantity },
       CHOLE: { label: chlabel, quantity: chquantity },
       ENERC_KCAL: { label: enlabel, quantity: enquantity },
@@ -32,8 +34,9 @@ const Details = () => {
           <img style={{height:'80px'}} src={recipeCardFoto} alt="recipeCardFoto" />
         </div>
         <div className="foodDetail">
+          <div className="nutrientsDiv">
           <h3>Nutrients</h3>
-          <p>{calabel} : {Math.floor(caquantity)} g</p>
+          <p>{calabelinho} : {Math.floor(caquantity)} g</p>
           <p>{cholabel} : {Math.floor(choquantity)} g</p>
           <p>{chlabel} : {Math.floor(chquantity)} mg</p>
           <p>{enlabel} : {Math.floor(enquantity)} kcal</p>
@@ -43,10 +46,12 @@ const Details = () => {
           <p>{cholabel} : {Math.floor(choquantity)} g</p>
           <p>{digest[2].label} : {Math.floor(digest[2].total)}</p>
           <p>{chlabel} : {Math.floor(chquantity)} mg</p>
-
+          </div>
+          <div className="nutrientsImgDiv">
           <img src={image} alt="" />
+          </div>
           <div className="ingre">
-            <ul>
+            <ol>
              
                 {ingredientLines.map((item) => {
                   return(
@@ -54,7 +59,7 @@ const Details = () => {
                   )
                 })}
              
-            </ul>
+            </ol>
           </div>
         </div>
       </div>

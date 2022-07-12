@@ -18,7 +18,7 @@ const Login = () => {
     <div className="loginBigContainer">
       <div className="loginContainer">
         <img className="oturanboga" src={oturanboga} alt="oturanboga" />
-        <h1>≺ED8EN/≻ RECIPE</h1>
+        <h1>{"<ED8EN/>"} RECIPE</h1>
         <form
         onSubmit={handleLoginSubmit}
         >

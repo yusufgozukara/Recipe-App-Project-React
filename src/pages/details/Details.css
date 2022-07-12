@@ -1,0 +1,35 @@
+.recipeCardBody{
+    width: 100%;
+    background-color: rgb(53, 167, 192);
+
+}
+
+.recipeHeader{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+    padding: 3rem;
+
+
+}
+.recipeHeader h1{
+    display: inline-block;
+
+}
+
+.foodDetail{
+    display: flex;
+    border: 1px solid wheat;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.nutrientsDiv{
+    text-align: right;
+
+}

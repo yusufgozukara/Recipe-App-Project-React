@@ -3,7 +3,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-background-color: bisque;
+background-color: rgb(165, 211, 226);
 height: 50px;
 }
 
@@ -19,5 +19,11 @@ height: 50px;
 
 .navbarRightLink, .navbarLeftLink{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.navbarLeft{
+    display: flex;
+    margin-left: 1rem;
 }

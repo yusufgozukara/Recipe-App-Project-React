@@ -19,7 +19,7 @@ const Home = () => {
   const APP_ID = process.env.REACT_APP_ID;
 
 
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`;
+  const url = `https://api.edamam.com/search?q=${query}&app_id=dd81734d&app_key=b8a952198128b93d1604257ef80f6172&mealType=${meal}`;
   console.log(url);
 
   // const {id, title, thumbnailUrl } = data;
@@ -49,6 +49,7 @@ const Home = () => {
     e.preventdefault();
     getFood();
     setQuery('');
+    console.log(query);
   };
 
   return (
@@ -57,9 +58,10 @@ const Home = () => {
         <h1>Food App</h1>
         <div className="formDiv">
           <form onSubmit={handleSubmit}>
-            <input type="search" name="query" id="query" placeholder="Please write you want" value={query} onChange={(e) => setQuery(e.target.value)} />
-            {/* <button type="submit" onClick={() => setFoodList(!foodList)}>Search</button> */}
-            <button type="submit" >Search</button>
+            <input className="input" type="search" name="query" id="query" placeholder="Please write you want" value={query} onChange={(e) => setQuery(e.target.value)} />
+            
+
+            <button type="submit" className="searchButton" >Search</button>
             
             <select name="mealtype" id="meal" onChange={(e) => setMeal(e.target.value)}>
               console.log(meal);
@@ -74,10 +76,9 @@ const Home = () => {
       </div>
       <div className="miniFoodCardDiv">
       <div className="miniFoodCard">
-        {food.map((item,id) => (<RecipeCard key = {id} recipe={item.recipe}/>))}
-        {/* <h2>??food name</h2>
-        <img src="" alt="??food img" />
-        <button onClick={() => navigate(`recipecard`)}>View More</button> */}
+        {food?.map((food,id) => {
+          return (<RecipeCard key = {id} recipe={food.recipe}/>)}
+          )}
         </div>
       </div>
     </div>

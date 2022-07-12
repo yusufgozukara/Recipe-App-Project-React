@@ -11,12 +11,14 @@ const Navbar = () => {
   return (
     <div className='navbarContainer'>
       <div className="navbarLeft">
-        <p>≺ED8EN/≻</p>
-        <ul>
+        <div><p>{"<ED8EN/>"}</p></div>
+        <div><ul>
           <li>
             <Link to='/home' className='navbarLeftLink'>RECIPE</Link>
           </li>
-        </ul>
+        </ul></div>
+        
+        
       </div>
       <div className="navbarRight">
         <ul>

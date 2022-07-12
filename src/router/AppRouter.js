@@ -17,15 +17,9 @@ const AppRouter = () => {
       <Routes>
         <Route path='/' element={<Login/>}/>
         <Route path='/about' element={<About/>}/>
-        {/* <Route path='github' /> */}
         <Route path='/home' element={<Home/>}/>
         <Route path='/details' element={<Details/>}/>
-          {/* <Route path='recipecard' element={<RecipeCard/>}/> */}
         <Route path='*' element={<NotFound/>}/>
-        
-        
-
-
       </Routes>
     </BrowserRouter>
     </>
