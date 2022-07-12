@@ -1,24 +1,65 @@
 import React from 'react'
-import './RecipeCard.css';
-import recipeCardFoto from '../../assets/diet.svg';
+import { useNavigate, useLocation } from "react-router-dom";
+import recipeCardFoto from '../../assets/diet.svg'
+
 
 const Details = () => {
+  
+  // const navigate = useNavigate();
+  const location = useLocation();
+  const {
+    calories,
+    totalWeight,
+    label: mainlabel,
+    totalNutrients: {
+      CA: { label: calabel, quantity: caquantity },
+      CHOCDF: { label: cholabel, quantity: choquantity },
+      CHOLE: { label: chlabel, quantity: chquantity },
+      ENERC_KCAL: { label: enlabel, quantity: enquantity },
+    },
+    digest,
+    image,
+    ingredientLines,
+  } = location.state;
+  console.log(location.state);
+
   return (
-    <div>Details
-      {/* <div className='recipeCardBody'>
+    <div>
+      <div className='recipeCardBody'>
       <div className="recipeCardDiv">
         <div className="recipeHeader">
-          <h1>??Food Name</h1>
-          <img src={recipeCardFoto} alt="" />
+          <h1>{mainlabel}</h1>
+          <img style={{height:'80px'}} src={recipeCardFoto} alt="recipeCardFoto" />
         </div>
         <div className="foodDetail">
-          <h3>??ingredients</h3>
-          <img src="??food foto" alt="" />
-          <h3>??food tarif</h3>
+          <h3>Nutrients</h3>
+          <p>{calabel} : {Math.floor(caquantity)} g</p>
+          <p>{cholabel} : {Math.floor(choquantity)} g</p>
+          <p>{chlabel} : {Math.floor(chquantity)} mg</p>
+          <p>{enlabel} : {Math.floor(enquantity)} kcal</p>
+          <p>Total Weights: {Math.floor(totalWeight)}</p>
+          <p>Calories: {Math.floor(calories)}</p>
+          <p>{digest[0].label} : {Math.floor(digest[0].total)}</p>
+          <p>{cholabel} : {Math.floor(choquantity)} g</p>
+          <p>{digest[2].label} : {Math.floor(digest[2].total)}</p>
+          <p>{chlabel} : {Math.floor(chquantity)} mg</p>
+
+          <img src={image} alt="" />
+          <div className="ingre">
+            <ul>
+             
+                {ingredientLines.map((item) => {
+                  return(
+                    <li>{item}</li>
+                  )
+                })}
+             
+            </ul>
+          </div>
         </div>
       </div>
       
-    </div> */}
+    </div>
     </div>
   )
 }

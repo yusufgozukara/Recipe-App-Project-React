@@ -1,20 +1,18 @@
 import React from 'react'
 import './RecipeCard.css';
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const RecipeCard = ({recipe}) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    console.log('bilgi');
-  }
+
 
   return (
 
     <div className="recipeCardLittle">
-      <h5>{recipe.label}</h5>
-      <img style={{width:'70px'}} src={recipe.image} alt="" />
-      <button onClick={handleClick}>View More</button>
+      <h2>{recipe.label}</h2>
+      <img style={{height:'60%'}} src={recipe.image} alt="" />
+      <button onClick={() => navigate(`/Details`, {state:recipe})}>View More</button>
       {/* <button onClick={() => navigate(`/Details`, { state: recipe })}>View More</button> */}
     </div>
     // <div className='recipeCardBody'>
