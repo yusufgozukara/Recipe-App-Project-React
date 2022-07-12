@@ -15,26 +15,20 @@
     padding: 4px;
 }
 
-.homeContainer{
-    border: 1px solid red;
-}
+
 
 .miniFoodCardDiv{
-    border: 1px solid red;
-    display: flex;
-    flex-wrap: wrap;
     width: 95%;
 }
 
 
 .miniFoodCard{
-    border: 1px solid blue;
-    width: 17%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 90vh;
 
 }
