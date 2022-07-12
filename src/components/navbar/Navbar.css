@@ -5,13 +5,12 @@ justify-content: space-between;
 align-items: center;
 background-color: rgb(165, 211, 226);
 height: 50px;
+width: 100%;
 }
 
 .navbarContainer li{
     display: inline;
-    margin: 10px 20px;
-    
-    
+    margin: 10px 20px;  
 }
 .navbarContainer p{
     display: inline;
