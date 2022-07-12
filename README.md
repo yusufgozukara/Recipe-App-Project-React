@@ -4,7 +4,7 @@ My react project is here. You can look at this..
 
 [Click Here](https://recipe-app-project-react.netlify.app/)
 
-![]()
+![](intro.gif)
 
 
 # Getting Started with Create React App
