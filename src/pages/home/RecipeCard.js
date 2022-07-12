@@ -1,15 +1,9 @@
 import React from 'react'
 import './RecipeCard.css';
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/navbar/Navbar";
 
 const RecipeCard = ({recipe}) => {
   const navigate = useNavigate();
-
-  const {
-    label,
-    images
-  } = recipe;
 
 
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import RecipeCard from "./RecipeCard";
 import Navbar from "../../components/navbar/Navbar";
 // import RecipeCard from '../pages/home/RecipeCard';

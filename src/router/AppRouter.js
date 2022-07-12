@@ -4,7 +4,6 @@ import Login from '../pages/login/Login';
 import About from '../pages/about/About';
 import Home from '../pages/home/Home';
 import NotFound from '../pages/notFound/NotFound';
-import RecipeCard from '../pages/home/RecipeCard';
 import Details from '../pages/details/Details';
 
 

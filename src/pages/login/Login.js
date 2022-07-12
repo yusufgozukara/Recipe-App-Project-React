@@ -1,16 +1,13 @@
-import React, { useState } from "react";
 import "./Login.css";
 import oturanboga from "../../assets/meal2.svg";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [user, setUser] = useState('');
   const navigate = useNavigate();
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    sessionStorage.setItem('user', user);
-    window.location.href='home';
+    navigate('/home');
 
   }
 
@@ -25,8 +22,6 @@ const Login = () => {
           <input
             type="text"
             placeholder="Username"
-            // value={user}
-            // onChange={(e) => setUser(e.target.value)}
             required
           />
           <input
@@ -36,7 +31,7 @@ const Login = () => {
             id="loginPassword"
             required
           />
-          <button type="submit" onClick={navigate('/home')}>
+          <button type="submit">
             Login
           </button>
         </form>
