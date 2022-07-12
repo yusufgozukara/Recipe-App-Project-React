@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate, useLocation } from "react-router-dom";
 import recipeCardFoto from '../../assets/diet.svg';
 import './Details.css';
+import Navbar from "../../components/navbar/Navbar";
 
 
 
@@ -27,6 +28,7 @@ const Details = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className='recipeCardBody'>
       <div className="recipeCardDiv">
         <div className="recipeHeader">

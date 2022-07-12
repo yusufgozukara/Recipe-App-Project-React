@@ -1,10 +1,12 @@
 import React from 'react';
 import './About.css';
 import coding from '../../assets/coding.svg';
+import Navbar from "../../components/navbar/Navbar";
 
 const About = () => {
   return (
     <div className="aboutBody">
+      <Navbar/>
       <div className='aboutContainer'>
         <img src={coding} alt="coderMan" className='coderImg' />
         <h2>About Software Developer <span>ED BEN</span></h2>

@@ -36,7 +36,7 @@ const Login = () => {
             id="loginPassword"
             required
           />
-          <button type="submit" onClick={navigate(`home`)}>
+          <button type="submit" onClick={navigate('/home')}>
             Login
           </button>
         </form>
