@@ -48,7 +48,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventdefault();
     getFood();
-    setQuery('');
+    // setQuery('');
     console.log(query);
   };
 
@@ -63,8 +63,8 @@ const Home = () => {
 
             <button type="submit" className="searchButton" >Search</button>
             
-            <select name="mealtype" id="meal" onChange={(e) => setMeal(e.target.value)}>
-              console.log(meal);
+            <select name="mealtype" id="meal" value={meal} onChange={(e) => setMeal(e.target.value)}>
+
               <option value="breakfast">Breakfast</option>
               <option value="lunch">Lunch</option>
               <option value="dinner">Dinner</option>
@@ -76,8 +76,8 @@ const Home = () => {
       </div>
       <div className="miniFoodCardDiv">
       <div className="miniFoodCard">
-        {food?.map((food,id) => {
-          return (<RecipeCard key = {id} recipe={food.recipe}/>)}
+        {food.map((food,index) => {
+          return (<RecipeCard key = {index} recipe={food.recipe}/>)}
           )}
         </div>
       </div>
