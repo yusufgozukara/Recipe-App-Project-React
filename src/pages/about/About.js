@@ -9,12 +9,12 @@ const About = () => {
       <Navbar/>
       <div className='aboutContainer'>
         <img src={coding} alt="coderMan" className='coderImg' />
-        <h2>About Software Developer <span>ED BEN</span></h2>
+        <h1>About Software Developer <span style={{fontSize:'1.3rem', color:'wheat'}}>Yusuf</span></h1>
         <div className='textDiv'>
-          <h3>I'm Ed.</h3>
+          <h3>I'm Yusuf.</h3>
           <p>I'm currently learning Full-Stack Development Languages.</p>
-          <p>I've already known JS, ReactJS, ReactNative, NodeJS, MongoDB, SQL, Python, AWS Services.</p>
-          <p><span>Send email</span> : edwardbenedict92@gmail.com</p>
+          <p>I've already known JS, ReactJS, NodeJS, MongoDB, SQL, Python, Agile Methodologies.</p>
+          <p><span>Send email</span> : yusufgozukara11@gmail.com</p>
         </div>
 
       </div>

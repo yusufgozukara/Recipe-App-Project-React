@@ -3,7 +3,6 @@ import "./Home.css";
 import axios from "axios";
 import RecipeCard from "./RecipeCard";
 import Navbar from "../../components/navbar/Navbar";
-// import RecipeCard from '../pages/home/RecipeCard';
 
 
 
@@ -14,8 +13,8 @@ const Home = () => {
 
   const [food, setFood] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [meal, setMeal] = useState('dinner');
-  const [query, setQuery] = useState('pizza');
+  const [meal, setMeal] = useState('teatime');
+  const [query, setQuery] = useState('');
   // const navigate = useNavigate();
 
   // const APP_KEY = process.env.REACT_APP_KEY;
@@ -65,7 +64,7 @@ const Home = () => {
         <h1>Food App</h1>
         <div className="formDiv">
           <form onSubmit={handleSubmit}>
-            <input className="input" type="text" name="query" id="query" placeholder="Please write you want" value={query} onChange={(e) => setQuery(e.target.value)} />
+            <input className="input" type="text" name="query" id="query" placeholder="Please write you want..." value={query} onChange={(e) => setQuery(e.target.value)} />
             
 
             <button type="submit" className="searchButton" >Search</button>

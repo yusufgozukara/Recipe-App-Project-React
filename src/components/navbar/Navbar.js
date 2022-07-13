@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-// import { useEffect } from 'react';
+
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='navbarContainer'>
       <div className="navbarLeft">
-        <div><p>{"<ED8EN/>"}</p></div>
+        <div><p style={{fontSize:'1.4rem', color:'white'}}>{"<YUSUF/>"}</p></div>
         <div><ul>
           <li>
             <Link to='/home' className='navbarLeftLink'>RECIPE</Link>

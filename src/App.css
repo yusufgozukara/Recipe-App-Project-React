@@ -25,3 +25,6 @@ button{
     border: 1px solid wheat;
     cursor: pointer;
 }
+button:hover{
+    transform: scale(1.02);
+}
