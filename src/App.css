@@ -23,4 +23,5 @@ button{
     padding: 10px;
     border-radius: 15px;
     border: 1px solid wheat;
+    cursor: pointer;
 }

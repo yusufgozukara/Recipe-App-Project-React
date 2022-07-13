@@ -12,7 +12,7 @@ const RecipeCard = ({recipe}) => {
 
     <div className="recipeCardLittle">
       <h2>{recipe.label}</h2>
-      <img style={{height:'60%'}} src={recipe.image} alt="" />
+      <img style={{height:'60%', maxWidth:'350px'}} src={recipe.image} alt="" />
       <button onClick={() => navigate(`/Details`, {state:recipe})}>View More</button>
     </div>
     </>
